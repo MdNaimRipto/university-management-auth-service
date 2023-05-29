@@ -1,7 +1,7 @@
 import express, { Application, Request, Response } from "express"
 import cors from "cors"
-require("dotenv").config()
 
+// Configuring app
 const app: Application = express()
 
 // middleWire
@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req: Request, res: Response) => {
-    res.send(201).send({
+    res.status(201).send({
         message: "Auth Service Management Server is running successfully.",
         statusCode: 201
     })
