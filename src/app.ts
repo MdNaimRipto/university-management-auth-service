@@ -1,5 +1,6 @@
 import express, { Application, Request, Response } from 'express'
 import cors from 'cors'
+import userRouter from './app/modules/users/users.router'
 
 // Configuring app
 const app: Application = express()
@@ -15,5 +16,7 @@ app.get('/', (req: Request, res: Response) => {
     statusCode: 201,
   })
 })
+
+app.use('/api/v1/users', userRouter)
 
 export default app
