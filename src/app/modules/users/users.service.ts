@@ -1,25 +1,24 @@
-import { Error } from 'mongoose'
-import config from '../../../config'
-import { IUsers } from './users.interface'
-import { Users } from './users.schema'
-import { generateUserID } from './users.utils'
+import config from '../../../config';
+import { IUsers } from './users.interface';
+import { Users } from './users.schema';
+import { generateUserID } from './users.utils';
+import ApiError from '../../../errors/ApiError';
 
 const createUserToDB = async (user: IUsers): Promise<IUsers | null> => {
-  const id = await generateUserID()
-  user.id = id
+  const id = await generateUserID();
+  user.id = id;
 
   if (!user.password) {
-    user.password = config.default_user_pass as string
+    user.password = config.default_user_pass as string;
   }
-  const createUser = await Users.create(user)
+  const createUser = await Users.create(user);
   if (!createUser) {
-    const error: Error = new Error('Failed to Create User! Please Try Again.')
-    throw error
+    throw new ApiError(400, 'Failed to Create User! Please Try Again.');
   } else {
-    return createUser
+    return createUser;
   }
-}
+};
 
 export default {
   createUserToDB,
-}
+};
