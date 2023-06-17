@@ -6,19 +6,24 @@
     "auditLog": "D:\\My-Work\\Next-Level\\University-of-PHero\\university-management-auth-service\\logs\\winston\\error\\.1bd856721f29eb6139667338e06c3b43e55dbbb7-audit.json",
     "files": [
         {
-            "date": 1686740070250,
-            "name": "D:\\My-Work\\Next-Level\\University-of-PHero\\university-management-auth-service\\logs\\winston\\error\\2023-06-14-16.log",
-            "hash": "c119880c2a9e1662c7b260ab8a8ea67ad492ac10723920e6d31752237f5c5a6a"
+            "date": 1686900754474,
+            "name": "D:\\My-Work\\Next-Level\\University-of-PHero\\university-management-auth-service\\logs\\winston\\error\\2023-06-16-13.log",
+            "hash": "a59eaaaff8f4223f14068b6358c3dc8bcf486305fa2d29796449cfff76dd5e70"
         },
         {
-            "date": 1686742495533,
-            "name": "D:\\My-Work\\Next-Level\\University-of-PHero\\university-management-auth-service\\logs\\winston\\error\\2023-06-14-17.log",
-            "hash": "d7c4dc69c3ef514802c05ac1ea8b5464be71c4f677294efe7d1bbae5ee56f0c7"
+            "date": 1686904091848,
+            "name": "D:\\My-Work\\Next-Level\\University-of-PHero\\university-management-auth-service\\logs\\winston\\error\\2023-06-16-14.log",
+            "hash": "5f9c8bbadba5809a67e16fe24134a4f39a118e9ee4edf930acb62d3c6a19bec1"
         },
         {
-            "date": 1686802371036,
-            "name": "D:\\My-Work\\Next-Level\\University-of-PHero\\university-management-auth-service\\logs\\winston\\error\\2023-06-15-10.log",
-            "hash": "8fa0ecf721c580371e0a69653564148aa9f0bbe047b04fbd47e15a16d27b59d5"
+            "date": 1686907387238,
+            "name": "D:\\My-Work\\Next-Level\\University-of-PHero\\university-management-auth-service\\logs\\winston\\error\\2023-06-16-15.log",
+            "hash": "e82b808afc77a3f5362268d610cdc44f51d229ddd9ba2ce1fd1bec6a48b83423"
+        },
+        {
+            "date": 1686910408956,
+            "name": "D:\\My-Work\\Next-Level\\University-of-PHero\\university-management-auth-service\\logs\\winston\\error\\2023-06-16-16.log",
+            "hash": "7ed20c5f2f30632df1ae17455aa15162beee9549f538fc8b6f91d8c24a0c389c"
         }
     ],
     "hashType": "sha256"

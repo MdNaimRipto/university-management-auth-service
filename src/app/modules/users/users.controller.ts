@@ -1,25 +1,20 @@
 import { NextFunction, Request, Response } from 'express';
-import usersService from './users.service';
+import { UserService } from './users.service';
 
-export const createUser = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
+const createUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { user } = req.body;
-    const result = await usersService.createUserToDB(user);
+    const result = await UserService.createUser(user);
     res.status(201).send({
       statusCode: 201,
       message: 'User Created Successfully',
       user: result,
     });
-  } catch (error: any) {
-    // res.status(400).send({
-    //   statusCode: 400,
-    //   errorMessage: error,
-    // });
+  } catch (error) {
     next(error);
-    console.log(error.message);
   }
+};
+
+export const UserController = {
+  createUser,
 };

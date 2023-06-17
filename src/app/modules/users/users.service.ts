@@ -4,7 +4,7 @@ import { Users } from './users.schema';
 import { generateUserID } from './users.utils';
 import ApiError from '../../../errors/ApiError';
 
-const createUserToDB = async (user: IUsers): Promise<IUsers | null> => {
+const createUser = async (user: IUsers): Promise<IUsers | null> => {
   const id = await generateUserID();
   user.id = id;
 
@@ -19,6 +19,6 @@ const createUserToDB = async (user: IUsers): Promise<IUsers | null> => {
   }
 };
 
-export default {
-  createUserToDB,
+export const UserService = {
+  createUser,
 };
